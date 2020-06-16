@@ -1,0 +1,20 @@
+//1. Написать функцию, которая рассчитывает процент жира в организме по заданным параметрам (рост, вес, пол, возраст и т.п). 
+#include <iostream>
+#include <math.h>
+using namespace std;
+void fun() {
+	float r,t,b,sh,z; // r-рост,z-жир,t-талия,b-бедра,sh-обхват шеи
+	cout<<"r t b sh ="; cin>>r>>t>>b>>sh;
+		z=(163.205*log10(t+b-sh))-97.68*log10(r)-104.91;
+
+		cout<<"z="<<z<<endl;
+	}
+
+int main() {
+	fun();
+	
+	system("pause");
+	return 0;
+}
+
+//без пола
